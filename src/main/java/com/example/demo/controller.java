@@ -12,10 +12,15 @@ public class controller {
 	public controller() {
 		// TODO Auto-generated constructor stub
 	}
+
+	@RequestMapping(method=RequestMethod.GET, value="/")
+	public String init() {
+		return "Hello WOrld";
+	}
 	
 	@RequestMapping(method=RequestMethod.GET, value="/welcome")
 	public String method1() {
-		return "Hello WOrld example";
+		return "Hello WOrld, welcome back";
 	}
 
 }
